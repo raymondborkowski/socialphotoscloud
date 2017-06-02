@@ -13,6 +13,8 @@
 		242C53531EDF89EA00C960D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 242C53521EDF89EA00C960D8 /* Assets.xcassets */; };
 		242C53561EDF89EA00C960D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242C53541EDF89EA00C960D8 /* LaunchScreen.storyboard */; };
 		242C53611EDF89EB00C960D8 /* SocialCloud_PhotosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242C53601EDF89EB00C960D8 /* SocialCloud_PhotosTests.swift */; };
+		2596468E804AA392AE086DE8 /* Pods_SocialCloud_PhotosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09810A541ED0318E55DBE786 /* Pods_SocialCloud_PhotosTests.framework */; };
+		49918D75CC4F0E3E96704689 /* Pods_SocialCloud_Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D518D57AEDE9DF24D79EED3 /* Pods_SocialCloud_Photos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09810A541ED0318E55DBE786 /* Pods_SocialCloud_PhotosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialCloud_PhotosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		242C53481EDF89EA00C960D8 /* SocialCloud Photos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SocialCloud Photos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		242C534B1EDF89EA00C960D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		242C534D1EDF89EA00C960D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,11 @@
 		242C535C1EDF89EB00C960D8 /* SocialCloud PhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SocialCloud PhotosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		242C53601EDF89EB00C960D8 /* SocialCloud_PhotosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialCloud_PhotosTests.swift; sourceTree = "<group>"; };
 		242C53621EDF89EB00C960D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D518D57AEDE9DF24D79EED3 /* Pods_SocialCloud_Photos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialCloud_Photos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		770C44D58554C534901C6BEF /* Pods-SocialCloud PhotosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialCloud PhotosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialCloud PhotosTests/Pods-SocialCloud PhotosTests.release.xcconfig"; sourceTree = "<group>"; };
+		7F5533532729192EABBCC71D /* Pods-SocialCloud PhotosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialCloud PhotosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialCloud PhotosTests/Pods-SocialCloud PhotosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8AEE436B30F9628C58873652 /* Pods-SocialCloud Photos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialCloud Photos.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialCloud Photos/Pods-SocialCloud Photos.release.xcconfig"; sourceTree = "<group>"; };
+		A0D93B32374FFEB46B0D3FD6 /* Pods-SocialCloud Photos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialCloud Photos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialCloud Photos/Pods-SocialCloud Photos.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49918D75CC4F0E3E96704689 /* Pods_SocialCloud_Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2596468E804AA392AE086DE8 /* Pods_SocialCloud_PhotosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				242C534A1EDF89EA00C960D8 /* SocialCloud Photos */,
 				242C535F1EDF89EB00C960D8 /* SocialCloud PhotosTests */,
 				242C53491EDF89EA00C960D8 /* Products */,
+				9661C712CFA8EE1BEDAE7B7F /* Pods */,
+				8F1034A3E3F1CAB41774A990 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,26 @@
 			path = "SocialCloud PhotosTests";
 			sourceTree = "<group>";
 		};
+		8F1034A3E3F1CAB41774A990 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D518D57AEDE9DF24D79EED3 /* Pods_SocialCloud_Photos.framework */,
+				09810A541ED0318E55DBE786 /* Pods_SocialCloud_PhotosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9661C712CFA8EE1BEDAE7B7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0D93B32374FFEB46B0D3FD6 /* Pods-SocialCloud Photos.debug.xcconfig */,
+				8AEE436B30F9628C58873652 /* Pods-SocialCloud Photos.release.xcconfig */,
+				7F5533532729192EABBCC71D /* Pods-SocialCloud PhotosTests.debug.xcconfig */,
+				770C44D58554C534901C6BEF /* Pods-SocialCloud PhotosTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 242C53651EDF89EB00C960D8 /* Build configuration list for PBXNativeTarget "SocialCloud Photos" */;
 			buildPhases = (
+				B8D2921FDAE9A525D45D6016 /* [CP] Check Pods Manifest.lock */,
 				242C53441EDF89EA00C960D8 /* Sources */,
 				242C53451EDF89EA00C960D8 /* Frameworks */,
 				242C53461EDF89EA00C960D8 /* Resources */,
+				3BA78260A51647A2C0FCAADA /* [CP] Embed Pods Frameworks */,
+				8DC736C13A2E9F29F7AEF026 /* [CP] Copy Pods Resources */,
+				243F9F671EE06DA200268675 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -120,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 242C53681EDF89EB00C960D8 /* Build configuration list for PBXNativeTarget "SocialCloud PhotosTests" */;
 			buildPhases = (
+				4991DA790F506BA89DF206C7 /* [CP] Check Pods Manifest.lock */,
 				242C53581EDF89EB00C960D8 /* Sources */,
 				242C53591EDF89EB00C960D8 /* Frameworks */,
 				242C535A1EDF89EB00C960D8 /* Resources */,
+				4C66975F19EEBC178C99C676 /* [CP] Embed Pods Frameworks */,
+				E20A925A50B3284FD7D7F814 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +232,112 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		243F9F671EE06DA200268675 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 6e353085a08fc59d712c831795d59a99785e6550 186ce3e61e36c13ee9d8db6cc8e2f20e59980d07c16fc720317faf7b54ab0f30";
+		};
+		3BA78260A51647A2C0FCAADA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialCloud Photos/Pods-SocialCloud Photos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4991DA790F506BA89DF206C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4C66975F19EEBC178C99C676 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialCloud PhotosTests/Pods-SocialCloud PhotosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DC736C13A2E9F29F7AEF026 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialCloud Photos/Pods-SocialCloud Photos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8D2921FDAE9A525D45D6016 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E20A925A50B3284FD7D7F814 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialCloud PhotosTests/Pods-SocialCloud PhotosTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		242C53441EDF89EA00C960D8 /* Sources */ = {
@@ -339,6 +484,7 @@
 		};
 		242C53661EDF89EB00C960D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0D93B32374FFEB46B0D3FD6 /* Pods-SocialCloud Photos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "SocialCloud Photos/Info.plist";
@@ -351,6 +497,7 @@
 		};
 		242C53671EDF89EB00C960D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AEE436B30F9628C58873652 /* Pods-SocialCloud Photos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "SocialCloud Photos/Info.plist";
@@ -363,6 +510,7 @@
 		};
 		242C53691EDF89EB00C960D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F5533532729192EABBCC71D /* Pods-SocialCloud PhotosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -377,6 +525,7 @@
 		};
 		242C536A1EDF89EB00C960D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 770C44D58554C534901C6BEF /* Pods-SocialCloud PhotosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -408,6 +557,7 @@
 				242C53671EDF89EB00C960D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		242C53681EDF89EB00C960D8 /* Build configuration list for PBXNativeTarget "SocialCloud PhotosTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +566,7 @@
 				242C536A1EDF89EB00C960D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

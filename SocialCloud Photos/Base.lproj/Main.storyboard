@@ -1,26 +1,97 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SocialCloud_Photos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="DoF-9i-viv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Q2-E8-RND">
+                                <rect key="frame" x="10" y="135" width="394" height="537"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SocialPhotos Cloud" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="se0-PU-bet">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="70"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="45"/>
+                                        <color key="textColor" red="0.28106505474488597" green="0.58701658441392546" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Hash Tag Phrase" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="GOk-qf-fsp">
+                                        <rect key="frame" x="0.0" y="70" width="394" height="286"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="search"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1T-Au-qRK">
+                                        <rect key="frame" x="0.0" y="356" width="394" height="30"/>
+                                        <state key="normal" title="Search"/>
+                                        <connections>
+                                            <action selector="makeTwitterRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FQR-2M-fOZ"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SMd-1k-WaF">
+                                        <rect key="frame" x="0.0" y="386" width="394" height="151"/>
+                                        <string key="text">Search for your favorite hashtag! By entering the hashtag of your choice, we will search through millions of Twitter, Facebook, and Instagram pictures to bring all of your images to one place! You can then save your search and come back to it later or download them straight to your device!</string>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SMd-1k-WaF" firstAttribute="leading" secondItem="8Q2-E8-RND" secondAttribute="leading" id="3Pk-Ys-9Xc"/>
+                                    <constraint firstItem="y1T-Au-qRK" firstAttribute="leading" secondItem="8Q2-E8-RND" secondAttribute="leading" id="3dP-6R-sAj"/>
+                                    <constraint firstAttribute="trailing" secondItem="SMd-1k-WaF" secondAttribute="trailing" id="FQC-tE-RUx"/>
+                                    <constraint firstItem="GOk-qf-fsp" firstAttribute="leading" secondItem="8Q2-E8-RND" secondAttribute="leading" id="GJt-9i-9s7"/>
+                                    <constraint firstItem="se0-PU-bet" firstAttribute="leading" secondItem="8Q2-E8-RND" secondAttribute="leading" id="ZTg-Hn-THz"/>
+                                    <constraint firstAttribute="trailing" secondItem="se0-PU-bet" secondAttribute="trailing" id="aNq-vc-tLa"/>
+                                    <constraint firstAttribute="trailing" secondItem="y1T-Au-qRK" secondAttribute="trailing" id="dR4-I0-WFh"/>
+                                    <constraint firstAttribute="trailing" secondItem="GOk-qf-fsp" secondAttribute="trailing" id="ylB-X3-wIG"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DoF-9i-viv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0GW-aB-UlK"/>
+                            <constraint firstAttribute="trailing" secondItem="8Q2-E8-RND" secondAttribute="trailing" constant="10" id="22I-lK-kNu"/>
+                            <constraint firstItem="8Q2-E8-RND" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="3jc-K4-D1J"/>
+                            <constraint firstItem="DoF-9i-viv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="L7T-Ux-RFR"/>
+                            <constraint firstItem="8Q2-E8-RND" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="115" id="OeY-gV-GyJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DoF-9i-viv" secondAttribute="bottom" id="RiE-5I-JKW"/>
+                            <constraint firstAttribute="trailing" secondItem="DoF-9i-viv" secondAttribute="trailing" id="V9A-0U-juD"/>
+                            <constraint firstAttribute="trailing" secondItem="DoF-9i-viv" secondAttribute="trailing" id="dVP-rS-tPl"/>
+                            <constraint firstItem="DoF-9i-viv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hyw-r6-6PZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Q2-E8-RND" secondAttribute="bottom" constant="64" id="t22-X6-S1R"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="hashTagField" destination="GOk-qf-fsp" id="Kyg-eu-XMR"/>
+                        <outlet property="socialPhotosLabel" destination="se0-PU-bet" id="aYd-mm-NfS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-82.5" y="133.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="162" height="288"/>
+    </resources>
 </document>
