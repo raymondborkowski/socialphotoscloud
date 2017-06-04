@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,37 +18,37 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="DoF-9i-viv">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Q2-E8-RND">
-                                <rect key="frame" x="10" y="135" width="394" height="537"/>
+                                <rect key="frame" x="10" y="135" width="355" height="468"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SocialPhotos Cloud" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="se0-PU-bet">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="70"/>
                                         <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="45"/>
                                         <color key="textColor" red="0.28106505474488597" green="0.58701658441392546" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Hash Tag Phrase" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="GOk-qf-fsp">
-                                        <rect key="frame" x="0.0" y="70" width="394" height="286"/>
+                                        <rect key="frame" x="0.0" y="70" width="355" height="217"/>
                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="search"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1T-Au-qRK">
-                                        <rect key="frame" x="0.0" y="356" width="394" height="30"/>
+                                        <rect key="frame" x="0.0" y="287" width="355" height="30"/>
                                         <state key="normal" title="Search"/>
                                         <connections>
                                             <action selector="makeTwitterRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FQR-2M-fOZ"/>
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SMd-1k-WaF">
-                                        <rect key="frame" x="0.0" y="386" width="394" height="151"/>
+                                        <rect key="frame" x="0.0" y="317" width="355" height="151"/>
                                         <string key="text">Search for your favorite hashtag! By entering the hashtag of your choice, we will search through millions of Twitter, Facebook, and Instagram pictures to bring all of your images to one place! You can then save your search and come back to it later or download them straight to your device!</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="14"/>
@@ -89,6 +89,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-82.5" y="133.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JBf-Cn-QTm">
+            <objects>
+                <viewController id="wa7-fY-Ko0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OUW-oH-FqZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="KRf-Kq-ymG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sZG-fP-rWH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="qEo-S4-0Ao">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qEo-S4-0Ao" firstAttribute="leading" secondItem="sZG-fP-rWH" secondAttribute="leading" id="3IC-pk-Ttv"/>
+                            <constraint firstAttribute="trailing" secondItem="qEo-S4-0Ao" secondAttribute="trailing" id="cPn-Si-TB3"/>
+                            <constraint firstItem="qEo-S4-0Ao" firstAttribute="top" secondItem="sZG-fP-rWH" secondAttribute="top" id="kXq-T9-oxP"/>
+                            <constraint firstItem="KRf-Kq-ymG" firstAttribute="top" secondItem="qEo-S4-0Ao" secondAttribute="bottom" id="tOC-XE-mi6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sEZ-xb-JPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601" y="132"/>
         </scene>
     </scenes>
     <resources>

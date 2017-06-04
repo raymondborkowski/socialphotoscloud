@@ -40,28 +40,28 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 }
                 
                 do {
-                    var urls = [Any]()
-                    if let data = data,
-                    let json = try JSONSerialization.jsonObject(with: data) as? NSDictionary,
-                    let statuses = json.value(forKey: "statuses") as? NSArray,
-                    let entities = statuses.value(forKey: "entities") as? NSArray,
-                    let media = entities.value(forKey: "media") as? NSArray,
-                    let text = media.value(forKey: "media_url_https") as? NSArray {
-                        urls.append(text[0])
+                    var urls = [String]()
+                    let json = try JSONSerialization.jsonObject(with: data!) as? [String:Any]
+                    let statuses = json?["statuses"] as? Array<NSObject> // is an array
+                    for status in statuses! {
+                        let entities = status.value(forKey: "entities") as? NSObject
+                        let media = entities?.value(forKey: "media") as? Array<NSObject>
+                        if media != nil {
+                            for medium in media! {
+                                let media_url_https = medium.value(forKey: "media_url_https") as! String
+                                urls.append(media_url_https);
+                            }
+                        }
                     }
-                    let NameArray:NSArray = urls as NSArray
-                    let swiftArray = NameArray as! [[String]]
-                    let flattenedArray = swiftArray.flatMap{ $0 }
-                    self.createImages(flattenedArray);
-                    
+                    self.createImages(urls)
                 } catch _ as NSError {
                 }
             }
         }
     }
     
-    func createImages(_ imgArr: Array<Any>) {
-        print(imgArr[0])
+    func createImages(_ imgArr: Array<String>) {
+        print(imgArr)
     }
     
     //MARK: UITextFieldDelegate
