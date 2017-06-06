@@ -32,7 +32,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         var clientError : NSError?
             
         let request = client.urlRequest(withMethod: "GET", url: statusesShowEndpoint, parameters: params, error: &clientError)
-            
+        
         client.sendTwitterRequest(request) { (response, data, connectionError) -> Void in
             if connectionError != nil {
                 print("Error: \(String(describing: connectionError))")
@@ -52,14 +52,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         }
                     }
                 }
-                self.createImages(urls)
+                self.performSegue(withIdentifier: "homeToPictureView", sender: self)
             } catch _ as NSError {
             }
         }
-    }
-    
-    func createImages(_ imgArr: Array<String>) {
-        print(imgArr)
     }
     
     //MARK: UITextFieldDelegate

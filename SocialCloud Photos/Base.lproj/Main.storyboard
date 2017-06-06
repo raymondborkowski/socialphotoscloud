@@ -84,13 +84,14 @@
                     <connections>
                         <outlet property="hashTagField" destination="GOk-qf-fsp" id="Kyg-eu-XMR"/>
                         <outlet property="socialPhotosLabel" destination="se0-PU-bet" id="aYd-mm-NfS"/>
+                        <segue destination="wa7-fY-Ko0" kind="show" identifier="homeToPictureView" id="pRB-K5-9bc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-82.5" y="133.75"/>
+            <point key="canvasLocation" x="-71" y="132"/>
         </scene>
-        <!--View Controller-->
+        <!--Navigate Back-->
         <scene sceneID="JBf-Cn-QTm">
             <objects>
                 <viewController id="wa7-fY-Ko0" sceneMemberID="viewController">
@@ -114,6 +115,9 @@
                             <constraint firstItem="KRf-Kq-ymG" firstAttribute="top" secondItem="qEo-S4-0Ao" secondAttribute="bottom" id="tOC-XE-mi6"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Navigate Back" id="ZNb-ty-yqq">
+                        <barButtonItem key="backBarButtonItem" title="&lt;" id="OXq-wd-Vve"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sEZ-xb-JPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
