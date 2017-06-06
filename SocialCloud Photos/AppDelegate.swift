@@ -14,9 +14,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        Twitter.sharedInstance().start(withConsumerKey:"Q2dnmJp4tfTpjgrVCBqIlaAmp", consumerSecret:"mVYm1ydNiZObAFxBxlqJfaD4qd7KFynxplL0fGyX9QxrQzVzWF")
+        var keys: NSDictionary?
+        if let path = Bundle.main.path(forResource: "Info", ofType: "plist") {
+            keys = NSDictionary(contentsOfFile: path)
+        }
+        if let dict = keys {
+            let consumerKey = dict["consumerKey"] as? String
+            let consumerSecretKey = dict["consumerSecretKey"] as? String
+            
+            Twitter.sharedInstance().start(withConsumerKey:consumerKey!, consumerSecret:consumerSecretKey!)
+        }
+        
         // Override point for customization after application launch.
         return true
     }

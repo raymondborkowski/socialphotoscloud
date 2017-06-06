@@ -28,13 +28,13 @@
                                 <rect key="frame" x="10" y="135" width="355" height="468"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SocialPhotos Cloud" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="se0-PU-bet">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="69.5"/>
                                         <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="45"/>
                                         <color key="textColor" red="0.28106505474488597" green="0.58701658441392546" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Hash Tag Phrase" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="GOk-qf-fsp">
-                                        <rect key="frame" x="0.0" y="70" width="355" height="217"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Hash Tag Phrase" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="30" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="GOk-qf-fsp">
+                                        <rect key="frame" x="0.0" y="69.5" width="355" height="217.5"/>
                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
@@ -47,7 +47,7 @@
                                             <action selector="makeTwitterRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FQR-2M-fOZ"/>
                                         </connections>
                                     </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SMd-1k-WaF">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SMd-1k-WaF">
                                         <rect key="frame" x="0.0" y="317" width="355" height="151"/>
                                         <string key="text">Search for your favorite hashtag! By entering the hashtag of your choice, we will search through millions of Twitter, Facebook, and Instagram pictures to bring all of your images to one place! You can then save your search and come back to it later or download them straight to your device!</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

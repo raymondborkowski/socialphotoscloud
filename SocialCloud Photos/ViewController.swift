@@ -26,36 +26,34 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func getTwitterResults(_ textField: String){
         // API Client for User Context
-        if let userID = Twitter.sharedInstance().sessionStore.session()?.userID {
-            let client = TWTRAPIClient(userID: userID)
-            let statusesShowEndpoint = "https://api.twitter.com/1.1/search/tweets.json"
-            let params = ["q": "#\(textField)%20filter:media"]
-            var clientError : NSError?
+        let client = TWTRAPIClient()
+        let statusesShowEndpoint = "https://api.twitter.com/1.1/search/tweets.json"
+        let params = ["q": "#\(textField)%20filter:media"]
+        var clientError : NSError?
             
-            let request = client.urlRequest(withMethod: "GET", url: statusesShowEndpoint, parameters: params, error: &clientError)
+        let request = client.urlRequest(withMethod: "GET", url: statusesShowEndpoint, parameters: params, error: &clientError)
             
-            client.sendTwitterRequest(request) { (response, data, connectionError) -> Void in
-                if connectionError != nil {
-                    print("Error: \(String(describing: connectionError))")
-                }
+        client.sendTwitterRequest(request) { (response, data, connectionError) -> Void in
+            if connectionError != nil {
+                print("Error: \(String(describing: connectionError))")
+            }
                 
-                do {
-                    var urls = [String]()
-                    let json = try JSONSerialization.jsonObject(with: data!) as? [String:Any]
-                    let statuses = json?["statuses"] as? Array<NSObject> // is an array
-                    for status in statuses! {
-                        let entities = status.value(forKey: "entities") as? NSObject
-                        let media = entities?.value(forKey: "media") as? Array<NSObject>
-                        if media != nil {
-                            for medium in media! {
-                                let media_url_https = medium.value(forKey: "media_url_https") as! String
-                                urls.append(media_url_https);
-                            }
+            do {
+                var urls = [String]()
+                let json = try JSONSerialization.jsonObject(with: data!) as? [String:Any]
+                let statuses = json?["statuses"] as? Array<NSObject> // is an array
+                for status in statuses! {
+                    let entities = status.value(forKey: "entities") as? NSObject
+                    let media = entities?.value(forKey: "media") as? Array<NSObject>
+                    if media != nil {
+                        for medium in media! {
+                            let media_url_https = medium.value(forKey: "media_url_https") as! String
+                            urls.append(media_url_https);
                         }
                     }
-                    self.createImages(urls)
-                } catch _ as NSError {
                 }
+                self.createImages(urls)
+            } catch _ as NSError {
             }
         }
     }
@@ -68,6 +66,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Hide the keyboard.
         textField.resignFirstResponder()
+        getTwitterResults(hashTagField.text!)
         return true
     }
     
