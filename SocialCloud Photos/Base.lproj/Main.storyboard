@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -84,14 +85,14 @@
                     <connections>
                         <outlet property="hashTagField" destination="GOk-qf-fsp" id="Kyg-eu-XMR"/>
                         <outlet property="socialPhotosLabel" destination="se0-PU-bet" id="aYd-mm-NfS"/>
-                        <segue destination="wa7-fY-Ko0" kind="show" identifier="homeToPictureView" id="pRB-K5-9bc"/>
+                        <segue destination="wa7-fY-Ko0" kind="presentation" identifier="homeToPictureView" modalTransitionStyle="flipHorizontal" id="pRB-K5-9bc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-71" y="132"/>
         </scene>
-        <!--Navigate Back-->
+        <!--View Controller-->
         <scene sceneID="JBf-Cn-QTm">
             <objects>
                 <viewController id="wa7-fY-Ko0" sceneMemberID="viewController">
@@ -106,22 +107,36 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="qEo-S4-0Ao">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ECD-ld-sGU">
+                                <rect key="frame" x="16" y="35" width="343" height="99"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Results">
+                                        <attributes>
+                                            <color key="NSColor" red="0.28445100784301758" green="0.58625346422195435" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="64" name="Papyrus"/>
+                                            <font key="NSOriginalFont" size="64" name="Papyrus"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qEo-S4-0Ao" firstAttribute="leading" secondItem="sZG-fP-rWH" secondAttribute="leading" id="3IC-pk-Ttv"/>
+                            <constraint firstItem="ECD-ld-sGU" firstAttribute="trailing" secondItem="sZG-fP-rWH" secondAttribute="trailingMargin" id="VTx-sQ-iUc"/>
                             <constraint firstAttribute="trailing" secondItem="qEo-S4-0Ao" secondAttribute="trailing" id="cPn-Si-TB3"/>
                             <constraint firstItem="qEo-S4-0Ao" firstAttribute="top" secondItem="sZG-fP-rWH" secondAttribute="top" id="kXq-T9-oxP"/>
+                            <constraint firstItem="ECD-ld-sGU" firstAttribute="top" secondItem="OUW-oH-FqZ" secondAttribute="bottom" constant="15" id="mdz-jB-748"/>
                             <constraint firstItem="KRf-Kq-ymG" firstAttribute="top" secondItem="qEo-S4-0Ao" secondAttribute="bottom" id="tOC-XE-mi6"/>
+                            <constraint firstItem="ECD-ld-sGU" firstAttribute="leading" secondItem="sZG-fP-rWH" secondAttribute="leadingMargin" id="z0t-z5-nVB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Navigate Back" id="ZNb-ty-yqq">
-                        <barButtonItem key="backBarButtonItem" title="&lt;" id="OXq-wd-Vve"/>
-                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sEZ-xb-JPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="601" y="132"/>
+            <point key="canvasLocation" x="600.79999999999995" y="131.78410794602701"/>
         </scene>
     </scenes>
     <resources>

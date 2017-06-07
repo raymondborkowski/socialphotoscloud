@@ -9,11 +9,15 @@
 import UIKit
 
 class PictureView: UIViewController {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+
+    var scrollView: UIScrollView!
+    var imageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,3 +37,4 @@ class PictureView: UIViewController {
     */
 
 }
+
