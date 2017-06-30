@@ -52,6 +52,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         }
                     }
                 }
+                // call something in here with url
                 self.performSegue(withIdentifier: "homeToPictureView", sender: self)
             } catch _ as NSError {
             }
