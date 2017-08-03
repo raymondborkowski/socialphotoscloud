@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Kingfisher
 
 
 class ViewController: UIViewController, UITextFieldDelegate {
@@ -23,10 +24,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        let imageView = UIImageView()
         super.viewDidAppear(animated)
         if !Reachability.isConnectedToNetwork(){
             self.showOfflineAlert()
         }
+        
+        let url = URL(string: "https://domain.com/image.jpg")!
+        imageView.kf.setImage(with: url)
     }
     
     override func viewWillAppear(_ animated: Bool) {

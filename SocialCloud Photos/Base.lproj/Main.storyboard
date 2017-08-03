@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="-71" y="132"/>
         </scene>
-        <!--View Controller-->
+        <!--Results View Controller-->
         <scene sceneID="JBf-Cn-QTm">
             <objects>
-                <viewController id="wa7-fY-Ko0" sceneMemberID="viewController">
+                <viewController id="wa7-fY-Ko0" customClass="resultsViewController" customModule="SocialCloud_Photos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OUW-oH-FqZ"/>
                         <viewControllerLayoutGuide type="bottom" id="KRf-Kq-ymG"/>
@@ -116,8 +116,8 @@
                                     <segue destination="BYZ-38-t0r" kind="showDetail" id="cSx-PK-Hjb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ECD-ld-sGU">
-                                <rect key="frame" x="16" y="28" width="343" height="70"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ECD-ld-sGU">
+                                <rect key="frame" x="16" y="35" width="343" height="99"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Results">
                                         <attributes>
@@ -130,21 +130,66 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="155" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PGB-yK-SmH">
+                                <rect key="frame" x="8" y="142" width="359" height="464"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="155" id="LhG-vs-mar" customClass="ImageCell" customModule="SocialCloud_Photos" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="359" height="155"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LhG-vs-mar" id="QiZ-bq-Juk">
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="154.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="far-uk-WNl">
+                                                    <rect key="frame" x="5" y="5" width="349" height="144.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="far-uk-WNl" firstAttribute="leading" secondItem="QiZ-bq-Juk" secondAttribute="leadingMargin" constant="5" id="0Hi-zR-Rzo"/>
+                                                <constraint firstItem="far-uk-WNl" firstAttribute="trailing" secondItem="QiZ-bq-Juk" secondAttribute="trailingMargin" constant="5" id="CbT-ss-z2J"/>
+                                                <constraint firstItem="far-uk-WNl" firstAttribute="leading" secondItem="QiZ-bq-Juk" secondAttribute="leading" constant="5" id="Nje-uF-KJk"/>
+                                                <constraint firstItem="far-uk-WNl" firstAttribute="top" secondItem="QiZ-bq-Juk" secondAttribute="top" constant="5" id="Qay-Mh-hWj"/>
+                                                <constraint firstItem="far-uk-WNl" firstAttribute="top" secondItem="QiZ-bq-Juk" secondAttribute="topMargin" constant="5" id="UmU-Z9-Ns6"/>
+                                                <constraint firstAttribute="bottom" secondItem="far-uk-WNl" secondAttribute="bottom" constant="5" id="aie-Qs-xau"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="far-uk-WNl" secondAttribute="bottom" constant="5" id="iqp-oh-GzK"/>
+                                                <constraint firstAttribute="trailing" secondItem="far-uk-WNl" secondAttribute="trailing" constant="5" id="qNJ-Sc-EWg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgView" destination="far-uk-WNl" id="kJn-JN-OlE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="wa7-fY-Ko0" id="cPR-ie-1qR"/>
+                                    <outlet property="delegate" destination="wa7-fY-Ko0" id="ha1-rE-8h4"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qEo-S4-0Ao" firstAttribute="leading" secondItem="sZG-fP-rWH" secondAttribute="leading" id="3IC-pk-Ttv"/>
+                            <constraint firstItem="PGB-yK-SmH" firstAttribute="trailing" secondItem="sZG-fP-rWH" secondAttribute="trailingMargin" constant="8" id="8dL-qV-yN5"/>
+                            <constraint firstItem="PGB-yK-SmH" firstAttribute="leading" secondItem="sZG-fP-rWH" secondAttribute="leadingMargin" constant="8" id="QBD-jm-8vd"/>
                             <constraint firstItem="ECD-ld-sGU" firstAttribute="trailing" secondItem="sZG-fP-rWH" secondAttribute="trailingMargin" id="VTx-sQ-iUc"/>
+                            <constraint firstItem="PGB-yK-SmH" firstAttribute="leading" secondItem="sZG-fP-rWH" secondAttribute="leading" constant="8" id="aDF-K5-oz1"/>
                             <constraint firstAttribute="trailing" secondItem="qEo-S4-0Ao" secondAttribute="trailing" id="cPn-Si-TB3"/>
+                            <constraint firstItem="EDI-On-N5L" firstAttribute="top" secondItem="PGB-yK-SmH" secondAttribute="bottom" constant="8" id="cja-op-pCQ"/>
                             <constraint firstItem="EDI-On-N5L" firstAttribute="leading" secondItem="sZG-fP-rWH" secondAttribute="leadingMargin" constant="82" id="iiM-UU-miU"/>
+                            <constraint firstItem="PGB-yK-SmH" firstAttribute="top" secondItem="ECD-ld-sGU" secondAttribute="bottom" constant="8" id="jzq-e7-Wof"/>
                             <constraint firstItem="qEo-S4-0Ao" firstAttribute="top" secondItem="sZG-fP-rWH" secondAttribute="top" id="kXq-T9-oxP"/>
                             <constraint firstItem="ECD-ld-sGU" firstAttribute="top" secondItem="OUW-oH-FqZ" secondAttribute="bottom" constant="15" id="mdz-jB-748"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EDI-On-N5L" secondAttribute="trailing" constant="83" id="qvs-xF-x5l"/>
                             <constraint firstItem="KRf-Kq-ymG" firstAttribute="top" secondItem="qEo-S4-0Ao" secondAttribute="bottom" id="tOC-XE-mi6"/>
                             <constraint firstItem="KRf-Kq-ymG" firstAttribute="top" secondItem="EDI-On-N5L" secondAttribute="bottom" constant="8" id="ytU-6Z-uND"/>
                             <constraint firstItem="ECD-ld-sGU" firstAttribute="leading" secondItem="sZG-fP-rWH" secondAttribute="leadingMargin" id="z0t-z5-nVB"/>
+                            <constraint firstAttribute="trailing" secondItem="PGB-yK-SmH" secondAttribute="trailing" constant="8" id="zPJ-kk-rFq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="PGB-yK-SmH" id="eR7-hN-5TP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sEZ-xb-JPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
