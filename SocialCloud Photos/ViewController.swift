@@ -29,6 +29,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationItem.title = "One"
+    }
+    
     func showOfflineAlert() {
         let alert = UIAlertController(title: "Offline", message: "Oh no! It looks like you are offline. Please connect to search photos!", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))

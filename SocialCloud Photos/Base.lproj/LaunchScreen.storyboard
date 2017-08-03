@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -71,6 +70,8 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WEY-AR-1U7" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="4kd-vW-X5A"/>
+                            <constraint firstItem="WEY-AR-1U7" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Ibl-dK-Vg1"/>
+                            <constraint firstItem="WEY-AR-1U7" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Mi1-oe-3B7"/>
                             <constraint firstItem="yZh-fK-1Ol" firstAttribute="centerX" secondItem="pa9-nX-Z0c" secondAttribute="centerX" id="P49-OF-WLf"/>
                             <constraint firstItem="WEY-AR-1U7" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="Vj3-66-HUG"/>
                             <constraint firstItem="yZh-fK-1Ol" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="8" id="XTZ-xI-MBL"/>
@@ -81,6 +82,8 @@
                             <constraint firstAttribute="trailing" secondItem="WEY-AR-1U7" secondAttribute="trailing" id="oP3-uj-ODY"/>
                             <constraint firstItem="WEY-AR-1U7" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="oeH-I3-moI"/>
                             <constraint firstItem="yZh-fK-1Ol" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="155" id="ts3-HU-Zq8"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="WEY-AR-1U7" secondAttribute="bottom" id="xjk-KJ-wq4"/>
+                            <constraint firstAttribute="trailing" secondItem="WEY-AR-1U7" secondAttribute="trailing" id="yuJ-Ag-J4R"/>
                         </constraints>
                     </view>
                 </viewController>

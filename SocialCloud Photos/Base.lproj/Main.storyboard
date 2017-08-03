@@ -106,8 +106,18 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="qEo-S4-0Ao">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ECD-ld-sGU">
-                                <rect key="frame" x="16" y="35" width="343" height="99"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDI-On-N5L">
+                                <rect key="frame" x="98" y="614" width="178" height="45"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="21"/>
+                                <state key="normal" title="New Search">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="cSx-PK-Hjb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ECD-ld-sGU">
+                                <rect key="frame" x="16" y="28" width="343" height="70"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Results">
                                         <attributes>
@@ -126,9 +136,12 @@
                             <constraint firstItem="qEo-S4-0Ao" firstAttribute="leading" secondItem="sZG-fP-rWH" secondAttribute="leading" id="3IC-pk-Ttv"/>
                             <constraint firstItem="ECD-ld-sGU" firstAttribute="trailing" secondItem="sZG-fP-rWH" secondAttribute="trailingMargin" id="VTx-sQ-iUc"/>
                             <constraint firstAttribute="trailing" secondItem="qEo-S4-0Ao" secondAttribute="trailing" id="cPn-Si-TB3"/>
+                            <constraint firstItem="EDI-On-N5L" firstAttribute="leading" secondItem="sZG-fP-rWH" secondAttribute="leadingMargin" constant="82" id="iiM-UU-miU"/>
                             <constraint firstItem="qEo-S4-0Ao" firstAttribute="top" secondItem="sZG-fP-rWH" secondAttribute="top" id="kXq-T9-oxP"/>
                             <constraint firstItem="ECD-ld-sGU" firstAttribute="top" secondItem="OUW-oH-FqZ" secondAttribute="bottom" constant="15" id="mdz-jB-748"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EDI-On-N5L" secondAttribute="trailing" constant="83" id="qvs-xF-x5l"/>
                             <constraint firstItem="KRf-Kq-ymG" firstAttribute="top" secondItem="qEo-S4-0Ao" secondAttribute="bottom" id="tOC-XE-mi6"/>
+                            <constraint firstItem="KRf-Kq-ymG" firstAttribute="top" secondItem="EDI-On-N5L" secondAttribute="bottom" constant="8" id="ytU-6Z-uND"/>
                             <constraint firstItem="ECD-ld-sGU" firstAttribute="leading" secondItem="sZG-fP-rWH" secondAttribute="leadingMargin" id="z0t-z5-nVB"/>
                         </constraints>
                     </view>
