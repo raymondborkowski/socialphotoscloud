@@ -41,7 +41,6 @@ public class Twit {
                     }
                     // call something in here with url
                     callback()
-                   // self.performSegue(withIdentifier: "homeToPictureView", sender: self)
                 } catch _ as NSError {
                     print("Error: ")
                 }

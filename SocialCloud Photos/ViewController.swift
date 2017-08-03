@@ -39,19 +39,25 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.performSegue(withIdentifier: "homeToPictureView", sender: self)
     }
     
+    func onSearch() {
+        // Create and add the loading modal.
+        let progressHUD = ProgressHUD(text: "Creating something magnificant")
+        self.view.addSubview(progressHUD)
+        Twit.getTwitterResults(hashTagField.text!, callback: transferToResults)
+    }
+    
     //MARK: UITextFieldDelegate
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // Hide the keyboard.
         textField.resignFirstResponder()
-        Twit.getTwitterResults(hashTagField.text!, callback: transferToResults)
+        onSearch()
+
         return true
     }
     
     // Mark: Actions
     @IBAction func makeTwitterRequest(_ sender: UIButton) {
-        
-        Twit.getTwitterResults(hashTagField.text!, callback: transferToResults )
+        onSearch()
     }
-    
 }
 
