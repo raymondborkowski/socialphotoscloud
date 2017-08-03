@@ -16,35 +16,32 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04514B6BCF1151438142A228E22FC054 /* Pods_SocialCloud_PhotosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SocialCloud_PhotosTests.framework; path = "Pods-SocialCloud PhotosTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04514B6BCF1151438142A228E22FC054 /* Pods_SocialCloud_PhotosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialCloud_PhotosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A4613DAC05A6D80038F8B211D6326FB /* Pods-SocialCloud Photos-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SocialCloud Photos-resources.sh"; sourceTree = "<group>"; };
 		105B6BDCB1F454022CE4B519DF48628A /* Pods-SocialCloud PhotosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SocialCloud PhotosTests.release.xcconfig"; sourceTree = "<group>"; };
 		10C70E77152A16995AB286CE30EA20E9 /* Pods-SocialCloud PhotosTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SocialCloud PhotosTests-dummy.m"; sourceTree = "<group>"; };
 		13A9DC9736CAE7EEE7C28A38A50CB74C /* Pods-SocialCloud PhotosTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SocialCloud PhotosTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		23045125456A86F06D95FFBB10EED7AF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2582FDA9B2EFB7603B20E82FB23EEF2E /* Pods-SocialCloud PhotosTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SocialCloud PhotosTests-umbrella.h"; sourceTree = "<group>"; };
-		28312186C322A74A61CE43697138CCC6 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
 		2899070030E759B49FAD643753671912 /* Pods-SocialCloud PhotosTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SocialCloud PhotosTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3E396D0EFEB42CA7ADD1D1895A2F6E15 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = iOS/TwitterCore.framework; sourceTree = "<group>"; };
-		46DB91D8D0E89EAE5FF73828492385E4 /* Pods-SocialCloud PhotosTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SocialCloud PhotosTests.modulemap"; sourceTree = "<group>"; };
+		46DB91D8D0E89EAE5FF73828492385E4 /* Pods-SocialCloud PhotosTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SocialCloud PhotosTests.modulemap"; sourceTree = "<group>"; };
 		514910CF397C6E363D4091D64F2CD1BC /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = iOS/TwitterKit.framework; sourceTree = "<group>"; };
 		51A61DDB3E930A2D254C8E61FE4B7F8D /* TwitterKitResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = iOS/TwitterKit.framework/TwitterKitResources.bundle; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6C51A1F33867C716DFDD0CCDDFDDB047 /* Pods-SocialCloud PhotosTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SocialCloud PhotosTests-resources.sh"; sourceTree = "<group>"; };
 		71DCDE25606ECEF127DCF7668946EC0B /* Pods-SocialCloud Photos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SocialCloud Photos-dummy.m"; sourceTree = "<group>"; };
-		789B499432F10BB86770BF60E4106FD1 /* Pods-SocialCloud Photos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SocialCloud Photos.modulemap"; sourceTree = "<group>"; };
-		7D22DAB4EE78F0254C80AE49A4C4E780 /* Pods_SocialCloud_Photos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SocialCloud_Photos.framework; path = "Pods-SocialCloud Photos.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		789B499432F10BB86770BF60E4106FD1 /* Pods-SocialCloud Photos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SocialCloud Photos.modulemap"; sourceTree = "<group>"; };
+		7D22DAB4EE78F0254C80AE49A4C4E780 /* Pods_SocialCloud_Photos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialCloud_Photos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C0470D4BB9C42BAA94360C56048AC9 /* Pods-SocialCloud PhotosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SocialCloud PhotosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		933C53E0F281EDF75468CC1AF0AAFF36 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A037D6F43E63AC4547E125E48A2E1338 /* Pods-SocialCloud PhotosTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SocialCloud PhotosTests-frameworks.sh"; sourceTree = "<group>"; };
 		A4F5CD5EB1065C1BA2DA30FF81C72FDE /* Pods-SocialCloud Photos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SocialCloud Photos-umbrella.h"; sourceTree = "<group>"; };
 		AF5A8B01AA27475C8D0D768C0031626E /* Pods-SocialCloud Photos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SocialCloud Photos.debug.xcconfig"; sourceTree = "<group>"; };
 		B10902E5C49AA51BFEF68380F039DBCE /* Pods-SocialCloud Photos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SocialCloud Photos.release.xcconfig"; sourceTree = "<group>"; };
-		B240D65485509CF7EE0998A8DD37E68D /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
 		B8EF151A2327FA159723DEDFF636B425 /* Pods-SocialCloud Photos-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SocialCloud Photos-acknowledgements.plist"; sourceTree = "<group>"; };
 		C9696DD70F63B22E3EFAAD7F38F046FE /* Pods-SocialCloud Photos-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SocialCloud Photos-frameworks.sh"; sourceTree = "<group>"; };
-		DFEB9418A8A8EB2F5863DFCB9B689717 /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
 		F922751D628FAC08ED5EC1850487025F /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = TwitterShareExtensionUIResources.bundle; path = iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
 		FC2B5C15B9D2D8513FF266698D3B6BAE /* Pods-SocialCloud Photos-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SocialCloud Photos-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,14 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				514910CF397C6E363D4091D64F2CD1BC /* TwitterKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		17A11F737FAE865798D118450678B032 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				28312186C322A74A61CE43697138CCC6 /* Fabric.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,7 +126,6 @@
 			children = (
 				B1A0E5407F061703CD8312BBB914D1EF /* Frameworks */,
 			);
-			name = TwitterCore;
 			path = TwitterCore;
 			sourceTree = "<group>";
 		};
@@ -152,22 +140,10 @@
 		B22FE4A2A7819BC0489C26EE175D17A5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B3EE012E55D8C78378CC92DBFFD0E03D /* Fabric */,
 				903DD9ADE5A783C51AE10D015DAFCBD9 /* TwitterCore */,
 				D227DCC687E6ECB1E46D32C32450A6AF /* TwitterKit */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		B3EE012E55D8C78378CC92DBFFD0E03D /* Fabric */ = {
-			isa = PBXGroup;
-			children = (
-				B240D65485509CF7EE0998A8DD37E68D /* FABAttributes.h */,
-				DFEB9418A8A8EB2F5863DFCB9B689717 /* Fabric.h */,
-				17A11F737FAE865798D118450678B032 /* Frameworks */,
-			);
-			name = Fabric;
-			path = Fabric;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -184,7 +160,6 @@
 				0F0F4B9805CE194F64231B97FD71DF13 /* Frameworks */,
 				775F3E9D008BFFD17C7FC1273AC2F8DA /* Resources */,
 			);
-			name = TwitterKit;
 			path = TwitterKit;
 			sourceTree = "<group>";
 		};
