@@ -119,6 +119,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="newSearch:" destination="wa7-fY-Ko0" eventType="touchUpInside" id="Ri9-2f-Ldu"/>
                                     <segue destination="BYZ-38-t0r" kind="showDetail" id="cSx-PK-Hjb"/>
                                 </connections>
                             </button>

@@ -42,6 +42,9 @@ class resultsViewController: UIViewController, UITableViewDelegate, UITableViewD
         return cell
     }
     
+    @IBAction func newSearch(_ sender: UIButton) {
+        urls = [String]()
+    }
 }
 
 extension UIViewController {
