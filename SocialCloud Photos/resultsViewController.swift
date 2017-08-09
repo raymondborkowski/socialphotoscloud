@@ -11,7 +11,7 @@ import Kingfisher
 
 class resultsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var arrayOfImages = ["https://www.advancedcustomfields.com/wp-content/uploads/2013/02/acf-image-field-edit.jpg","https://community.imgur.com/uploads/default/original/3X/9/4/946841767587979b888acd2c2e6f6a99982ff68a.jpg","https://clevertechie.com/img/php-curl-tutorial/array_imageurls.jpg"]
+    var arrayOfImages = urls
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -36,6 +36,7 @@ class resultsViewController: UIViewController, UITableViewDelegate, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "imageCell") as! ImageCell
         
         let resource = ImageResource(downloadURL: URL(string: arrayOfImages[indexPath.row])!, cacheKey: arrayOfImages[indexPath.row])
+        
         cell.imgView.kf.setImage(with: resource)
         
         return cell

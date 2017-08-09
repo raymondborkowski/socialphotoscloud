@@ -8,8 +8,6 @@
 
 import Foundation
 import UIKit
-import Kingfisher
-
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
@@ -24,18 +22,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let imageView = UIImageView()
         super.viewDidAppear(animated)
         if !Reachability.isConnectedToNetwork(){
             self.showOfflineAlert()
         }
-        
-        let url = URL(string: "https://domain.com/image.jpg")!
-        imageView.kf.setImage(with: url)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        navigationItem.title = "One"
     }
     
     func showOfflineAlert() {
@@ -50,7 +40,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func onSearch() {
         // Create and add the loading modal.
-        let progressHUD = ProgressHUD(text: "Creating something magnificant")
+        let progressHUD = ProgressHUD(text: "Searching...")
         self.view.addSubview(progressHUD)
         Twit.getTwitterResults(hashTagField.text!, callback: transferToResults)
     }

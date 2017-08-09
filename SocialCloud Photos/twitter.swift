@@ -10,6 +10,8 @@ import Foundation
 import TwitterKit
 import UIKit
 
+var urls = [String]()
+
 public class Twit {
 
     class func getTwitterResults(_ textField: String, callback:@escaping (() -> Void)){
@@ -26,7 +28,6 @@ public class Twit {
                 print("Error: \(String(describing: connectionError))")
             } else {
                 do {
-                    var urls = [String]()
                     let json = try JSONSerialization.jsonObject(with: data!) as? [String:Any]
                     let statuses = json?["statuses"] as? Array<NSObject> // is an array
                     for status in statuses! {
@@ -41,6 +42,7 @@ public class Twit {
                     }
                     // call something in here with url
                     callback()
+                    
                 } catch _ as NSError {
                     print("Error: ")
                 }

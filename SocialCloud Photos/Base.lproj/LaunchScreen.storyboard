@@ -70,12 +70,15 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="WEY-AR-1U7" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="4kd-vW-X5A"/>
+                            <constraint firstAttribute="trailing" secondItem="WEY-AR-1U7" secondAttribute="trailing" id="Ce6-RI-cqQ"/>
+                            <constraint firstItem="WEY-AR-1U7" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="F5s-y6-yND"/>
                             <constraint firstItem="WEY-AR-1U7" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Ibl-dK-Vg1"/>
                             <constraint firstItem="WEY-AR-1U7" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Mi1-oe-3B7"/>
                             <constraint firstItem="yZh-fK-1Ol" firstAttribute="centerX" secondItem="pa9-nX-Z0c" secondAttribute="centerX" id="P49-OF-WLf"/>
                             <constraint firstItem="WEY-AR-1U7" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="Vj3-66-HUG"/>
                             <constraint firstItem="yZh-fK-1Ol" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="8" id="XTZ-xI-MBL"/>
                             <constraint firstItem="pa9-nX-Z0c" firstAttribute="top" secondItem="yZh-fK-1Ol" secondAttribute="bottom" constant="24" id="Zed-gc-Hnn"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="WEY-AR-1U7" secondAttribute="bottom" id="bBS-1s-MWO"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="pa9-nX-Z0c" secondAttribute="bottom" constant="113" id="dCC-Ng-j06"/>
                             <constraint firstItem="WEY-AR-1U7" firstAttribute="centerX" secondItem="yZh-fK-1Ol" secondAttribute="centerX" id="hVD-kC-aAB"/>
                             <constraint firstItem="pa9-nX-Z0c" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="30" id="nlC-Zr-FbN"/>
@@ -84,6 +87,7 @@
                             <constraint firstItem="yZh-fK-1Ol" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="155" id="ts3-HU-Zq8"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="WEY-AR-1U7" secondAttribute="bottom" id="xjk-KJ-wq4"/>
                             <constraint firstAttribute="trailing" secondItem="WEY-AR-1U7" secondAttribute="trailing" id="yuJ-Ag-J4R"/>
+                            <constraint firstItem="WEY-AR-1U7" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="zlU-Zf-MGc"/>
                         </constraints>
                     </view>
                 </viewController>
