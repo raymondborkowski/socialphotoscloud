@@ -27,9 +27,9 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8Q2-E8-RND">
                                 <rect key="frame" x="10" y="135" width="355" height="468"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SocialPhotos Cloud" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="se0-PU-bet">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SocialPhotos Cloud" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="22" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="se0-PU-bet">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="68"/>
-                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="45"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="45"/>
                                         <color key="textColor" red="0.28106505474488597" green="0.58701658441392546" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -44,17 +44,18 @@
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="search"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1T-Au-qRK">
-                                        <rect key="frame" x="0.0" y="118" width="355" height="198"/>
+                                        <rect key="frame" x="0.0" y="118" width="355" height="148"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                         <state key="normal" title="Search"/>
                                         <connections>
                                             <action selector="makeTwitterRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FQR-2M-fOZ"/>
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SMd-1k-WaF">
-                                        <rect key="frame" x="0.0" y="316" width="355" height="152"/>
+                                        <rect key="frame" x="0.0" y="266" width="355" height="202"/>
                                         <string key="text">Search for your favorite hashtag! By entering the hashtag of your choice, we will search through millions of Twitter, Facebook, and Instagram pictures to bring all of your images to one place! You can then save your search and come back to it later or download them straight to your device!</string>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="14"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -95,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-71" y="132"/>
+            <point key="canvasLocation" x="-71.200000000000003" y="131.78410794602701"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="JBf-Cn-QTm">
@@ -113,9 +114,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDI-On-N5L">
-                                <rect key="frame" x="98" y="614" width="178" height="45"/>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="21"/>
-                                <state key="normal" title="New Search">
+                                <rect key="frame" x="14" y="14" width="48" height="28"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                <state key="normal" title="&lt; Home">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -124,29 +125,55 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="155" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PGB-yK-SmH">
-                                <rect key="frame" x="8" y="107" width="359" height="499"/>
+                                <rect key="frame" x="0.0" y="122" width="375" height="545"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="imageCell" id="CHO-w0-sEg" customClass="ImageCell" customModule="SocialCloud_Photos" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="359" height="155"/>
+                                    <tableViewCell clipsSubviews="YES" alpha="0.34999999999999998" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="imageCell" id="CHO-w0-sEg" customClass="ImageCell" customModule="SocialCloud_Photos" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="155"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CHO-w0-sEg" id="zQZ-TN-zby">
-                                            <rect key="frame" x="0.0" y="0.0" width="359" height="155"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="154.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gme-rr-aOU">
-                                                    <rect key="frame" x="8" y="8" width="343" height="138"/>
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gme-rr-aOU">
+                                                    <rect key="frame" x="16" y="16" width="178" height="123"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" link="YES" image="YES"/>
+                                                    </accessibility>
                                                 </imageView>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2i-zR-RZT">
+                                                    <rect key="frame" x="202" y="10" width="157" height="137"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                                        <bool key="isElement" value="NO"/>
+                                                    </accessibility>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="157" id="AYI-yM-w9t"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
+                                                    <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                                </textView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Gme-rr-aOU" firstAttribute="trailing" secondItem="zQZ-TN-zby" secondAttribute="trailingMargin" id="0yG-82-Wja"/>
-                                                <constraint firstItem="Gme-rr-aOU" firstAttribute="centerY" secondItem="zQZ-TN-zby" secondAttribute="centerY" id="9zi-hf-fZa"/>
-                                                <constraint firstItem="Gme-rr-aOU" firstAttribute="top" secondItem="zQZ-TN-zby" secondAttribute="topMargin" id="EqU-TU-9BV"/>
-                                                <constraint firstItem="Gme-rr-aOU" firstAttribute="leading" secondItem="zQZ-TN-zby" secondAttribute="leadingMargin" id="boZ-7w-tby"/>
+                                                <constraint firstItem="Gme-rr-aOU" firstAttribute="centerY" secondItem="zQZ-TN-zby" secondAttribute="centerY" id="4iG-up-33u"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="d2i-zR-RZT" secondAttribute="bottom" constant="-0.5" id="JsH-QH-Yfs"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="d2i-zR-RZT" secondAttribute="trailing" constant="8" id="R12-vD-Dql"/>
+                                                <constraint firstItem="Gme-rr-aOU" firstAttribute="leading" secondItem="zQZ-TN-zby" secondAttribute="leadingMargin" constant="8" id="djc-B5-pdp"/>
+                                                <constraint firstItem="d2i-zR-RZT" firstAttribute="leading" secondItem="Gme-rr-aOU" secondAttribute="trailing" constant="8" symbolic="YES" id="fAx-lW-zu3"/>
+                                                <constraint firstItem="Gme-rr-aOU" firstAttribute="top" secondItem="zQZ-TN-zby" secondAttribute="topMargin" constant="8" id="hKe-eY-edH"/>
+                                                <constraint firstItem="d2i-zR-RZT" firstAttribute="top" secondItem="zQZ-TN-zby" secondAttribute="topMargin" constant="2" id="tfG-hg-6zJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
                                         <connections>
                                             <outlet property="imgView" destination="Gme-rr-aOU" id="zJa-zh-Lus"/>
+                                            <outlet property="textView" destination="d2i-zR-RZT" id="Ogd-g7-KU4"/>
+                                            <outlet property="uiBox" destination="zQZ-TN-zby" id="Fwe-uH-ooF"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -156,12 +183,12 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ECD-ld-sGU">
-                                <rect key="frame" x="16" y="0.0" width="343" height="99"/>
+                                <rect key="frame" x="58" y="44" width="259" height="76"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Results">
                                         <attributes>
                                             <color key="NSColor" red="0.28445100784301758" green="0.58625346422195435" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="64" name="Papyrus"/>
+                                            <font key="NSFont" size="63" name="BodoniSvtyTwoOSITCTT-Book"/>
                                             <font key="NSOriginalFont" size="64" name="Papyrus"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -172,19 +199,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KRf-Kq-ymG" firstAttribute="top" secondItem="EDI-On-N5L" secondAttribute="bottom" constant="8" symbolic="YES" id="3Gh-8M-4Q5"/>
                             <constraint firstItem="qEo-S4-0Ao" firstAttribute="bottom" secondItem="KRf-Kq-ymG" secondAttribute="top" id="3b3-aU-ukR"/>
-                            <constraint firstItem="ECD-ld-sGU" firstAttribute="top" secondItem="qEo-S4-0Ao" secondAttribute="top" id="8A0-yP-pzJ"/>
-                            <constraint firstItem="ECD-ld-sGU" firstAttribute="leading" secondItem="sZG-fP-rWH" secondAttribute="leadingMargin" id="LjT-E3-yX8"/>
-                            <constraint firstItem="EDI-On-N5L" firstAttribute="leading" secondItem="sZG-fP-rWH" secondAttribute="leadingMargin" constant="82" id="S3U-AQ-qKs"/>
-                            <constraint firstItem="ECD-ld-sGU" firstAttribute="centerX" secondItem="PGB-yK-SmH" secondAttribute="centerX" id="Tgf-Xs-8H6"/>
-                            <constraint firstItem="qEo-S4-0Ao" firstAttribute="centerX" secondItem="EDI-On-N5L" secondAttribute="centerX" id="aXI-OJ-qwH"/>
-                            <constraint firstItem="PGB-yK-SmH" firstAttribute="leading" secondItem="sZG-fP-rWH" secondAttribute="leadingMargin" constant="-8" id="aYS-15-pT4"/>
+                            <constraint firstItem="PGB-yK-SmH" firstAttribute="leading" secondItem="sZG-fP-rWH" secondAttribute="leading" id="Arl-JV-Sch"/>
+                            <constraint firstItem="PGB-yK-SmH" firstAttribute="top" secondItem="ECD-ld-sGU" secondAttribute="bottom" constant="2" id="OQV-3v-F9z"/>
+                            <constraint firstItem="ECD-ld-sGU" firstAttribute="top" secondItem="OUW-oH-FqZ" secondAttribute="bottom" constant="24" id="RUR-HU-5MD"/>
+                            <constraint firstAttribute="trailing" secondItem="PGB-yK-SmH" secondAttribute="trailing" id="Vfd-jM-Wfx"/>
+                            <constraint firstItem="EDI-On-N5L" firstAttribute="top" secondItem="sZG-fP-rWH" secondAttribute="top" constant="14" id="b34-eh-LHC"/>
+                            <constraint firstItem="EDI-On-N5L" firstAttribute="leading" secondItem="sZG-fP-rWH" secondAttribute="leading" constant="14" id="cPk-Gv-rDO"/>
                             <constraint firstItem="qEo-S4-0Ao" firstAttribute="leading" secondItem="sZG-fP-rWH" secondAttribute="leading" id="fdi-Do-MAQ"/>
-                            <constraint firstItem="PGB-yK-SmH" firstAttribute="centerX" secondItem="EDI-On-N5L" secondAttribute="centerX" id="icy-a3-USW"/>
-                            <constraint firstItem="PGB-yK-SmH" firstAttribute="top" secondItem="sZG-fP-rWH" secondAttribute="top" constant="107" id="mFd-HT-jBt"/>
-                            <constraint firstItem="EDI-On-N5L" firstAttribute="top" secondItem="PGB-yK-SmH" secondAttribute="bottom" constant="8" symbolic="YES" id="nCA-qI-mcS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ECD-ld-sGU" secondAttribute="trailing" constant="42" id="nMU-rj-9Yf"/>
+                            <constraint firstItem="ECD-ld-sGU" firstAttribute="leading" secondItem="sZG-fP-rWH" secondAttribute="leadingMargin" constant="42" id="nVz-Ac-bqs"/>
                             <constraint firstAttribute="trailing" secondItem="qEo-S4-0Ao" secondAttribute="trailing" id="r6c-hJ-egn"/>
+                            <constraint firstItem="KRf-Kq-ymG" firstAttribute="top" secondItem="PGB-yK-SmH" secondAttribute="bottom" id="zVu-zK-WWZ"/>
                             <constraint firstItem="qEo-S4-0Ao" firstAttribute="top" secondItem="sZG-fP-rWH" secondAttribute="top" id="zzv-hx-9VY"/>
                         </constraints>
                     </view>

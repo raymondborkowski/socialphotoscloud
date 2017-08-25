@@ -26,15 +26,37 @@ class resultsViewController: UIViewController, UITableViewDelegate, UITableViewD
         return arrayOfImages.count
     }
     
+    func imageTapped(tapGestureRecognizer: UITapGestureRecognizer){
+        let tappedImage = tapGestureRecognizer.view as! UIImageView
+        // Your action
+        let x = tappedImage.accessibilityLabel
+        print(x)
+        let url = URL(string: x!)!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "imageCell") as! ImageCell
-        let resource = ImageResource(downloadURL: URL(string: arrayOfImages[indexPath.row])!, cacheKey: arrayOfImages[indexPath.row])
-        
+        let resource = ImageResource(downloadURL: URL(string: arrayOfImages[indexPath.row][1] )!, cacheKey: arrayOfImages[indexPath.row][1] )
         cell.imgView.kf.setImage(with: resource)
+        cell.textView.text = arrayOfImages[indexPath.row][0]
+        
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        
+        cell.textView.superview?.addGestureRecognizer(tapGestureRecognizer)
+        
+        cell.imgView.isUserInteractionEnabled = true
+        cell.imgView.accessibilityLabel = arrayOfImages[indexPath.row][2]
+        cell.imgView.addGestureRecognizer(tapGestureRecognizer)
+
         return cell
     }
     
     @IBAction func newSearch(_ sender: UIButton) {
-        urls = [String]()
+        urls = []
     }
 }
